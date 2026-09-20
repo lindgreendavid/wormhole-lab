@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Wormhole Lab"
+type: software
+version: 0.1.0
+date-released: 2026-09-20
+authors:
+  - family-names: Lindgreen
+    given-names: David
+repository-code: "https://github.com/lindgreendavid/wormhole-lab"
+license: MIT
+keywords:
+  - traversable wormhole
+  - Morris-Thorne metric
+  - general relativity
+  - exotic matter
+  - energy conditions
+  - theoretical physics
+  - reproducible research
