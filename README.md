@@ -8,8 +8,8 @@ A rigorous computed exploration of the Morris-Thorne traversable wormhole: the r
 general-relativistic metric, the stress-energy it forces via the Einstein equations, and the
 actual open problem that stress-energy implies.
 
-**Live interactive laboratory and plain-language write-up: not yet deployed** (this repository
-is under active development; see [`CHANGELOG.md`](CHANGELOG.md)).
+**[Open the live interactive laboratory](https://wormhole-lab-interactive.lindgreendavid.workers.dev)**
+· plain-language write-up on the `blog` hub: not yet published (see [`CHANGELOG.md`](CHANGELOG.md)).
 
 **Research question:** does a spherically symmetric, static, horizon-free ("traversable")
 wormhole exist as a valid solution of General Relativity — and if so, what does Einstein's
