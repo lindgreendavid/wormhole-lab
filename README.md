@@ -39,7 +39,7 @@ throat would require. Full reasoning and the disclosed limitations: see
   dataset, since none exists for this problem.
 - A frozen, deterministic registry of computed stress-energy, energy-condition, and geometric
   (embedding/proper-distance) quantities across a disclosed grid of throat radii, shape-function
-  exponents, and redshift-function presets — reproducible byte-for-byte, same discipline as
+  exponents, and redshift-function presets — reproducible to a last-digit tolerance across platforms, same discipline as
   this maintainer's empirical laboratories.
 - An honest statement of what is proven (NEC violation at the throat, forced by flare-out) vs.
   what remains a genuinely open problem (no known matter violates the NEC macroscopically) vs.
@@ -60,7 +60,7 @@ throat would require. Full reasoning and the disclosed limitations: see
 | [`docs/research-protocol.md`](docs/research-protocol.md) | The preregistered hypotheses, the exact equations to be implemented, their literature source, and the independent checks that must pass — written before any registry existed. |
 | [`docs/research-report.md`](docs/research-report.md) | What the frozen registry actually shows, hypothesis by hypothesis, the literature-grounded statement of the real open problem, disclosed limitations, and a clearly flagged exploratory-thesis section. |
 | [`src/wormhole_lab/`](src/wormhole_lab/) | The Python package: shape/redshift function presets, the Einstein-tensor-derived stress-energy, energy-condition evaluation, embedding/proper-distance quadrature, and the static-observer proper-acceleration calculation. |
-| [`tests/`](tests/) | Closed-form and conservation-identity regression tests, plus a byte-comparison test against the frozen registry. |
+| [`tests/`](tests/) | Closed-form and conservation-identity regression tests, plus a tolerance-based comparison test against the frozen registry. |
 | [`reports/v0.1-wormhole-registry.json`](reports/v0.1-wormhole-registry.json) | The frozen, deterministic sweep output. |
 | [`site/`](site/) | An interactive Next.js (vinext) laboratory: a live embedding-diagram/simulator with throat-radius and shape-function controls, and a light-bending geodesic view, built for Cloudflare Workers. |
 
@@ -80,7 +80,7 @@ wormhole-lab --r0 1.0 --n 1.0 --redshift zero --radius-multiple 1.0
 ```bash
 source .venv/bin/activate
 python scripts/generate_registry.py --output /tmp/v0.1-wormhole-registry.json
-cmp reports/v0.1-wormhole-registry.json /tmp/v0.1-wormhole-registry.json  # should be silent
+python scripts/compare_registry.py reports/v0.1-wormhole-registry.json /tmp/v0.1-wormhole-registry.json  # prints OK
 ```
 
 This is fully deterministic — every entry is an exact closed-form evaluation, with no fitting

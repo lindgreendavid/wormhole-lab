@@ -5,6 +5,13 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- Registry comparison (script and test) now tolerates last-digit floating-point differences across
+  platforms (relative 1e-9 / absolute 1e-10); the previous exact comparison failed on Linux CI.
+- Web security audit: `sharp` and `source-map-js` are overridden to patched versions, and the `braces`
+  advisory (no fixed version published yet) is tracked in `SECURITY.md`.
+
 ## [0.1.0] - 2026-09-20
 
 ### Added

@@ -19,3 +19,10 @@ CI rejects known high-severity vulnerabilities in production web dependencies
 no authentication, and no server-side persistence of visitor input — every simulator control is
 computed client-side from typed, bounded numeric inputs (throat radius and shape-function
 preset selection only).
+
+The `braces` package (GHSA-vfj7-8cjw-p6xm, stack exhaustion on deeply nested glob patterns) is a
+transitive build-time dependency of the toolchain, absent from the deployed worker bundle. The advisory's
+fixed version (3.0.4) was not yet published when this was recorded (latest 3.0.3), so it is tracked in
+`site/pnpm-workspace.yaml` and `site/scripts/security-audit.mjs` until a fix ships. The site never evaluates
+user-supplied glob patterns. The `sharp` and `source-map-js` advisories are fixed by `pnpm` overrides to
+patched versions.

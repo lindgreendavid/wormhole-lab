@@ -6,7 +6,7 @@ Wormhole Lab welcomes small, evidence-backed changes.
 2. Create a focused branch.
 3. Add or update tests and documentation with the implementation.
 4. Run `pytest`, `ruff check .`, `ruff format --check .`, `mypy src`, `python -m build`, the
-   registry generator with a byte comparison against the committed registry, and the complete
+   registry generator with `scripts/compare_registry.py` against the committed registry, and the complete
    web lint/build/test suite in `site/`.
 5. Use English Conventional Commits and submit a draft pull request.
 
