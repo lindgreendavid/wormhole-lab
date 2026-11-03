@@ -2,7 +2,7 @@
 
 <p><a href="https://github.com/lindgreendavid/lindgreendavid/tree/main/brand"><img src="https://raw.githubusercontent.com/lindgreendavid/lindgreendavid/main/brand/lab-notes-mark.svg" width="52" align="right" alt="Lab Notes research-cycle mark"></a></p>
 
-**Part of the [Lab Notes Research Portfolio](https://blog-interactive.lindgreendavid.workers.dev/)** · General relativity · Question → established theory → open problem → boundary
+**Part of the [Lab Notes Research Portfolio](https://notes.lindgreendavid.com/)** · General relativity · Question → established theory → open problem → boundary
 
 A rigorous computed exploration of the Morris-Thorne traversable wormhole: the real
 general-relativistic metric, the stress-energy it forces via the Einstein equations, and the
